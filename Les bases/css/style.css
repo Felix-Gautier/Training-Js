@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffc546;
+}
+
+h1{
+    color: orangered;
+}
+
+p{
+    color: blue;
+}

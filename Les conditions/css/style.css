@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: crimson;
+}
+
+.contain{
+    max-width: 500px;
+    margin: 100px auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+.contain p{
+    font-size: 30px;
+}
+
+.contain span{
+    font-family: cursive;
+    color: goldenrod;
+}
+
+.btn{
+    border: 1px solid gray;
+    background: gray;
+    margin-top: 25px;
+    padding: 20px 40px;
+    color: gray;
+    cursor: pointer;
+}
+
+h3{
+    background: transparent;
+}
