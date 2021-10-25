@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EXO ALGORY</title>
+    </head>
+    <body>
+        <script>
+
+            const dictee = "Les petits enfants mangent une crème glacée au chocolat".split(" ");
+
+            // const transform = dictee.split("");
+            // console.log(transform);
+            const bareme = [];
+            const COD = [["enfan", "ts"], ["glac", "ée"], ['chocol', 'at']];
+
+            for (let i = 0; i < dictee.length; i++) {
+                for (let j = 0; j < COD.length; j++) {
+                    if (COD[j]) {
+                        let sentence = dictee[i].split('');
+                        let ends = sentence.splice(-2);
+                        if (COD[j][0] === sentence.join('')) {
+                            if (COD[j][1] === ends.join('')) {
+                                bareme.push(2);
+                                console.log(bareme);
+                            }
+                            else {
+                                bareme.push(0);
+                                console.log(bareme);
+                            }
+                        }
+                    }
+
+                    const VALEUR = dictee[i].includes(COD[j][0])
+                    console.log(VALEUR);
+                    if (VALEUR) {
+                        let mot = COD[j].join('');
+                        console.log(mot);
+
+                        if (mot === dictee[i]) {
+                            console.log('le mot est ' + dictee[i] + ' correct');
+                        }
+                    }
+                    else {
+                        console.log('le mot est pas juste');
+                    }
+                    // console.log(VALEUR)
+                }
+
+            }
+        </script>
+    </body>
+</html>

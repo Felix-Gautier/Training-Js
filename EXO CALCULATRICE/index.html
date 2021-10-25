@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculatrice</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/queries.css">
+    </head>
+
+    <body onkeypress="keyboard(event)">
+        <h1>Top Calculette</h1>
+        <div class="calculator card">
+
+            <form id="calculatrice" name="calc">
+                <input type="text" name="display" class="calculator-screen" value="0" disabled/>
+
+                <div class="calculator-keys">
+
+                    <button type="button" class="clr-white btn bg-blue btn-info" onclick="Display('+')" value="+">+</button>
+                    <button type="button" class="clr-white btn bg-blue btn-info" onclick="Display('-')" value="-">-</button>
+                    <button type="button" class="clr-white btn bg-blue btn-info" onclick="Display('*')" value="*">&times;</button>
+                    <button type="button" class="clr-white btn bg-blue btn-info" onclick="Display('/')" value="/">&divide;</button>
+
+                    <button type="button" class="clr-white btn bg-blue btn-info" onclick="Display('(')" value="(">(</button>
+                    <button type="button" class="clr-white btn bg-blue btn-info" onclick="Display(')')" value=")">)</button>
+                    <button type="button" class="clr-white btn bg-blue btn-info" onclick="Display('%')" value="%">%</button>
+                    <button type="button" class="clr-white btn bg-blue btn-info" onclick="Display('&#x221a;')" value="">&#x221a;</button>
+
+                    <button type="button" value="7" class="btn bg-light-gray" onclick="Display(7)">7</button>
+                    <button type="button" value="8" class="btn bg-light-gray" onclick="Display(8)">8</button>
+                    <button type="button" value="9" class="btn bg-light-gray" onclick="Display(9)">9</button>
+                    
+
+
+                    <button type="button" value="4" class="btn bg-light-gray" onclick="Display(4)">4</button>
+                    <button type="button" value="5" class="btn bg-light-gray" onclick="Display(5)">5</button>
+                    <button type="button" value="6" class="btn bg-light-gray" onclick="Display(6)">6</button>
+
+
+                    <button type="button" value="1" class="btn bg-light-gray" onclick="Display(1)">1</button>
+                    <button type="button" value="2" class="btn bg-light-gray" onclick="Display(2)">2</button>
+                    <button type="button" value="3" class="btn bg-light-gray" onclick="Display(3)">3</button>
+
+
+                    <button type="button" value="0" class="btn bg-light-gray" onclick="Display(0)">0</button>
+                    <button type="button" class="clr-white btn bg-gray btn-secondary" onclick="Display('.')" value=".">.</button>
+                    
+                    <button type="button" class="clr-white btn btn-danger bg-red" onclick="Vide()" value="all-clear">AC</button>
+                    <button type="button" value="Delete" class="btn bg-red" onclick="Delete()">Del</button>
+
+                    <button type="button" class="clr-white equal-sign btn bg-green btn-success" onclick="Equal('=')" value="=">=</button>
+                    
+                </div>
+            </form>    
+        </div>
+        
+
+
+
+        <script src="js/app.js"></script>
+    </body>
+
+</html>

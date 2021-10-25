@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cornsilk;
+    border: 50px double royalblue;
+    height: 100vh;
+}
+
+.form{
+    width: 400px;
+    margin: 50px auto;
+}
+
+.form-bar{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.form-bar input{
+    border: none;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    outline-color: chocolate;
+    background-color: transparent;
+}
